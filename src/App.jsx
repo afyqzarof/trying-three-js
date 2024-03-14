@@ -1,11 +1,16 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import "./App.scss";
 import Box from "./components/Box";
-import { OrbitControls, PresentationControls } from "@react-three/drei";
+import {
+  OrbitControls,
+  PresentationControls,
+  useGLTF,
+} from "@react-three/drei";
+import { Model } from "./components/Donut";
 
 function App() {
   return (
-    <Canvas flat dpr={[1, 2]} camera={{ fov: 25, position: [0, 0, 8] }}>
+    <Canvas flat dpr={[1, 2]} camera={{ position: [0, 0, 0.3] }}>
       <ambientLight intensity={Math.PI / 2} />
       <spotLight
         position={[10, 10, 10]}
@@ -16,7 +21,8 @@ function App() {
       />
       <pointLight position={[-10, -10, -10]} />
       <OrbitControls />
-      <Box />
+      {/* <Box /> */}
+      <Model />
     </Canvas>
   );
 }
