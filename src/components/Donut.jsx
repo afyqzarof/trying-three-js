@@ -16,8 +16,12 @@ export function Model(props) {
         position={[0, 0, 0]}
         rotation={[-0.039, 0.878, -0.055]}>
         <mesh
-          geometry={nodes.icing006.geometry}
+          geometry={nodes.Torus014.geometry}
           material={materials["Material.006"]}
+        />
+        <mesh
+          geometry={nodes.Torus014_1.geometry}
+          material={materials.sprinkle}
         />
       </mesh>
     </group>

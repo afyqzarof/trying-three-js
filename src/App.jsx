@@ -6,7 +6,8 @@ import {
   PresentationControls,
   useGLTF,
 } from "@react-three/drei";
-import { Model } from "./components/Donut";
+// import { Model } from "./components/Donut";
+import { Model } from "./components/Sunflower";
 
 function App() {
   return (
