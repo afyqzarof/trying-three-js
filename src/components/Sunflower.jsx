@@ -11,7 +11,7 @@ export function Model(props) {
   const { nodes, materials, animations } = useGLTF("/sunflower.glb");
   return (
     <group ref={group} {...props} dispose={null}>
-      <group name="Scene" position={[0, 0, 0]}>
+      <group name="Scene" position={[0, -3, 0]}>
         <mesh
           name="Plane"
           geometry={nodes.Plane.geometry}
